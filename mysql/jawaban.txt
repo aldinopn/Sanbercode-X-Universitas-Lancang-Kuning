@@ -26,7 +26,7 @@ CREATE TABLE books(
 
 3.memasukan data pada table
 MariaDB [library]> insert into users (name,email,password)
-    -> values ('john doe','john@doe.com','john123');
+    -> values ('aldino','john@doe.com','john123');
 
 MariaDB [library]> insert into users (id,name,email,password)
     -> values ('jane doe','jane@doe.com','jenita123');
