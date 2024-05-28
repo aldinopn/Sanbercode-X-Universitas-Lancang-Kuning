@@ -17,3 +17,12 @@ use App\Http\Controllers\biodataController;
 Route::get('/', [dashboardController::class,'index']);
 Route::get('/register', [biodataController::class,'register']);
 Route::post('/home', [biodataController::class, 'home']);
+Route::get('/data-table', function() {
+    return view('data-table');
+});
+Route::get('/table', function() {
+    return view('table');
+});
+// Route::get('/master', function() {
+//     return view('layouts.master');
+// });
