@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\biodataController;
+use App\Http\Controllers\castController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +24,8 @@ Route::get('/data-table', function() {
 Route::get('/table', function() {
     return view('table');
 });
+
+Route::resource('cast', castController::class);
 // Route::get('/master', function() {
 //     return view('layouts.master');
 // });
